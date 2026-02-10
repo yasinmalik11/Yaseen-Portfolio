@@ -2,6 +2,8 @@ import React from 'react'
 import { FaGithub} from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import { FaTwitter } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
 
 
 
@@ -15,17 +17,22 @@ function Contact() {
       <div className='w-full h-fit p-6 m-6 xl:grid grid-cols-1 '>
         <h1 className='text-3xl font-bold text-blue-600  mb-4 xl:mx-0 '>Contact Information</h1>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1'>
-      <div> <h1 className=' text-2xl font-bold text-white mb-2'>Email</h1>
+       
+      <div className=''>
+ <h1 className=' text-2xl font-bold text-white mb-2'>Email</h1>
         <p className='text-white text-lg mb-10 '>Yasennmalik@gmail.com</p></div>
          <div>   <h1  className=' text-2xl font-bold text-white mb-2'>Contact Cell</h1>
         <p className='text-white text-lg mb-10 lg:grid grid-cols-2'>0355468938</p></div>
          <div>   <h1  className=' text-2xl font-bold text-white mb-2'>Contact Cell</h1>
         <p className='text-white text-lg mb-6'>fjdkjx </p></div>
-          <h1  className=' text-3xl font-bold text-blue-600  mb-2 '>Contact Cell</h1>
-         <div className='flex'> <FaGithub className="text-white text-2xl mx-1 "/>
+       <div>   <h1  className=' text-3xl font-bold text-blue-600  mb-2 '>Contact Cell</h1>
+         <div className='flex'>
+           <FaGithub className="text-white text-2xl mx-1 "/>
           <CiLinkedin className="text-white text-2xl mx-1"/>
           <FaTwitter className="text-white text-2xl mx-1" />
+          <MdEmail className="text-white text-2xl mx-1" />
 
+          </div>
           </div>
 
 </div>

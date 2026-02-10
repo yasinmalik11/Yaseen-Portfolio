@@ -1,5 +1,8 @@
 import React from 'react'
-
+import { FaGithub} from "react-icons/fa";
+import { CiLinkedin } from "react-icons/ci";
+import { FaTwitter } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 function Footer() {
   return (
     <>
@@ -7,7 +10,13 @@ function Footer() {
     <section className='w-full h-full bg-black grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2'>
         <div className='m-5 p-6'>
             <h1 className='text-blue-500 text-3xl font-bold' >Muhammad Yaseen</h1>
-            <p className='text-white text-sm text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nobis labore maiores atque ut! Ex expedita optio, iste explicabo consequuntur saepe    .</p>
+            <p className='text-white text-sm text-justify mb-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nobis labore maiores atque ut! Ex expedita optio, iste explicabo consequuntur saepe    .</p>
+              <div className='flex'> <FaGithub className="text-white text-2xl mx-1 "/>
+                      <CiLinkedin className="text-white text-2xl mx-1"/>
+                      <FaTwitter className="text-white text-2xl mx-1" />
+                      <MdEmail className="text-white text-2xl mx-1" />
+            
+                      </div>
         </div>
 
         <div className='m-5 grid grid-cols-1 p-6'>

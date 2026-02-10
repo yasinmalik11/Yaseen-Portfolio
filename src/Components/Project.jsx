@@ -10,7 +10,7 @@ function Project() {
      
       {/* <div className=' bg-amber-200 w-fit h-fit flex '> */}
     <div className='w-fit h-fit bg-gray-700 border-4 border-indigo-700 rounded-md '>
-      <img className="w-full h-69  rounded-md object-cover" src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdvcmtpbmclMjBwZW9wbGV8ZW58MHx8MHx8fDA%3D=" alt='' />
+      <img className="w-full h-69  rounded-md object-cover" src="https://user-images.githubusercontent.com/16396664/146666086-28e88beb-c2f0-431f-adfb-2396d8f64c80.png" alt='' />
       <div className="mt-2 ">
         <h1 className="text-2xl text-sky-500 font-bold mx-2">First Project</h1>
         
@@ -20,7 +20,7 @@ function Project() {
       </div>
     </div>
      <div className='w-fit h-fit bg-gray-700 border-4 border-indigo-700  rounded-md   '>
-      <img className="w-full h-69  rounded-md object-cover " src="https://media.istockphoto.com/id/2180253986/photo/business-partners-in-meeting.webp?a=1&b=1&s=612x612&w=0&k=20&c=TKKAFFHJA3r5-NEl_wUUqslivwsJNiz2W-1Jh6kGuj0=" alt='' />
+      <img className="w-full h-69  rounded-md object-cover " src="https://repository-images.githubusercontent.com/337150944/a51e8900-6aec-11eb-8c14-9119664dccda" alt='' />
       <div className="mt-2 ">
         <h1 className="text-2xl text-sky-500 font-bold  mx-2 ">First Project</h1>
         
@@ -31,7 +31,7 @@ function Project() {
     {/* </div> */}
     {/* <div className='flex bg-amber-300 w-fit h-fit'> */}
            <div className='w-fit h-fit bg-gray-700 border-4 border-indigo-700  rounded-md'>
-      <img className="w-full h-69  rounded-md object-cover " src="https://media.istockphoto.com/id/1206225766/photo/a-woman-using-and-typing-on-laptop-computer-with-blank-white-desktop-screen.webp?a=1&b=1&s=612x612&w=0&k=20&c=k2ymKV4c3W0R87n2QoMj0evCvEgdgSaswB4kNi1odZw=" alt='' />
+      <img className="w-full h-69  rounded-md object-cover " src="https://www.datocms-assets.com/205/1640011361-react-ecommerce-tutorial.png?auto=format&h=500" alt='' />
       <div className="mt-2 ">
         <h1 className="text-2xl text-sky-500 font-bold  mx-2">First Project</h1>
         
@@ -41,7 +41,7 @@ function Project() {
       </div>
     </div>
      <div className='w-fit h-fit bg-gray-700 border-4 border-indigo-700 rounded-md'>
-      <img className="w-full h-69  rounded-md object-cover" src="https://media.istockphoto.com/id/2182836513/photo/asian-senior-woman-happily-watching-movie-on-laptop-with-her-elderly-husband-on-sofa-at-home.webp?a=1&b=1&s=612x612&w=0&k=20&c=2v2AZ9yQZOhIn2GADZ5clDWcgSEM_TFv5OT9AU33-PE=" alt='' />
+      <img className="w-full h-69  rounded-md object-cover" src="https://cdn.dribbble.com/userupload/42599224/file/original-622eb65208f11be39cef3096a0b75635.png" alt='' />
       <div className="mt-2 ">
         <h1 className="text-2xl text-sky-500 font-bold  mx-2">First Project</h1>
         
