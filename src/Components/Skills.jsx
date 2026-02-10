@@ -16,7 +16,7 @@ function Skills() {
   <section class="h-fit lg:h-fit xl:h-100" id='Skills'>
     <h1 className='text-center text-3xl text-white font-bold mb-2'>My <span className='text-indigo-500 text-center'>Skills</span></h1>
     <hr className='bg-white h-1'/>
-   <div className='grid grid-cols-1  px-10  py-16 justify-between gap-2 md:grid-cols-2 md:mb-10 lg:grid-cols-2 lg:px-5 lg:mb-10 xl:grid-cols-4  '>
+   <div className='grid grid-cols-1  px-4  py-16 justify-between gap-2 md:grid-cols-2 md:mb-10 lg:grid-cols-2 lg:px-5 lg:mb-10 xl:grid-cols-4  '>
   <div className='bg-gray-900 py-8 px-5 mb-10 rounded-2xl justify-center md:mb-8 lg:mb-10 '>
             <FaHtml5 className="text-orange-500 text-6xl mx-auto mb-4" />
     <h1 className='text-white text-4xl mx-10 mb-8 justify-center text-center'>HTML </h1>

@@ -13,7 +13,7 @@ function Contact() {
     
     <h1 className='text-3xl text-white font-bold text-center mb-2 ' id='Contact'> <span className='text-indigo-500 '>Contact</span></h1>
       <hr className='bg-white h-1'/>
-    <div className='h-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 m-10 border-2 border-white rounded-lg'>
+    <div className='h-full grid grid-cols-1  md:grid-cols-2 xl:grid-cols-2 m-4 xl:m-10 border-2 border-white rounded-lg'>
       <div className='w-full h-fit p-6 m-6 xl:grid grid-cols-1 '>
         <h1 className='text-3xl font-bold text-blue-600  mb-4 xl:mx-0 '>Contact Information</h1>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1'>
