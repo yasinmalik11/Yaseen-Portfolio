@@ -27,7 +27,7 @@ function Hero() {
 
       {/* Image Section */}
       <div className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 mb-10 lg:mb-0 flex justify-center lg:justify-end">
-        <div className="w-full h-full rounded-full border-4 border-blue-400 overflow-hidden transform hover:scale-105 transition duration-500 shadow-2xl">
+        <div className="w-full h-full rounded-full border-4  lg:mt-0 mt-8 border-blue-400 overflow-hidden transform hover:scale-105 transition duration-500 shadow-2xl">
           <img src={img} alt="Muhammad Yaseen" className="w-full h-full object-cover rounded-full" />
         </div>
       </div>
