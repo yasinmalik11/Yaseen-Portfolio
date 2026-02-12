@@ -1,27 +1,6 @@
-import React, { useEffect, useState } from "react";
 
 function Portfolio() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  // On page load, check saved theme
-  useEffect(() => {
-    const theme = localStorage.getItem("theme");
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-      setDarkMode(true);
-    }
-  }, []);
-
-  const toggleDarkMode = () => {
-    if (darkMode) {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    } else {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    }
-    setDarkMode(!darkMode);
-  };
+  
 
   return (
     <>
@@ -95,12 +74,7 @@ function Portfolio() {
 
               {/* Dark mode toggle */}
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <button
-                  onClick={toggleDarkMode}
-                  className="ml-4 px-4 py-2 rounded-lg bg-red-500 dark:bg-white text-gray-800 dark:text-yellow-300 transition duration-300 hover:bg-gray-300 dark:hover:bg-gray-600"
-                >
-                  {darkMode ? "☀ Light" : "🌙 Dark"}
-                </button>
+             
               </div>
             </div>
           </div>
