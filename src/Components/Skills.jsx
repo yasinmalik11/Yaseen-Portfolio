@@ -6,59 +6,42 @@ import { GrReactjs } from "react-icons/gr";
 
 function Skills() {
 
+  const skills = [
+    { icon: <FaHtml5 />, name: "HTML", color: "bg-green-600", progress: "w-[93%]" },
+    { icon: <RiTailwindCssFill />, name: "Tailwind", color: "bg-sky-600", progress: "w-[80%]" },
+    { icon: <IoLogoJavascript />, name: "JavaScript", color: "bg-yellow-400", progress: "w-[57%]" },
+    { icon: <GrReactjs />, name: "React", color: "bg-blue-500", progress: "w-[72%]" },
+  ];
 
   return (
-    <>
-    {/* <section className=' w-fit h-fit flex bg-gray-500 p-40 '>
-       <div className=' p-50'></div>
-    </section> */}
-    
-  <section class="h-fit lg:h-fit xl:h-100" id='Skills'>
-    <h1 className='text-center text-3xl text-white font-bold mb-2'>My <span className='text-indigo-500 text-center'>Skills</span></h1>
-    <hr className='bg-white h-1'/>
-   <div className='grid grid-cols-1  px-4  py-16 justify-between gap-2 md:grid-cols-2 md:mb-10 lg:grid-cols-2 lg:px-5 lg:mb-10 xl:grid-cols-4  '>
-  <div className='bg-gray-900 py-8 px-5 mb-10 rounded-2xl justify-center md:mb-8 lg:mb-10 '>
-            <FaHtml5 className="text-orange-500 text-6xl mx-auto mb-4" />
-    <h1 className='text-white text-4xl mx-10 mb-8 justify-center text-center'>HTML </h1>
-    <div className='w-full bg-white rounded-2xl h-2.5'>
-    <div className='bg-green-600 h-2.5 rounded-2xl w-[93%]'>
-    </div>
-    </div>
-      <p className='text-center text-gray-300 mt-2 '>93%</p>
-  </div>
-  <div className='bg-gray-900 py-8 px-5 mb-10 rounded-2xl justify-center lg:mb-10'>
-    <RiTailwindCssFill className="text-sky-600 text-6xl mx-auto mb-4" />
-    <h1 className='text-white text-4xl   mb-8 justify-center text-center'>TAILWIND</h1>
-    <div className='w-full bg-white rounded-2xl h-2.5'>
-    <div className='bg-blue-600 h-2.5 rounded-2xl w-[80%]'>
-    </div>
-    </div>
-      <p className='text-center text-gray-300 mt-2 '>80%</p>
-  </div>
-  <div className='bg-gray-900  py-8 px-5 mb-10 rounded-2xl justify-center lg:mb-10'>
-    <IoLogoJavascript className="text-yellow-300 text-6xl mx-auto mb-4" />
-    <h2 className='text-white text-4xl  mb-8 justify-center text-center'>JAVA SCRIPT</h2>
-    <div className='w-full bg-white rounded-2xl h-2.5'>
-    <div className='bg-red-600 h-2.5 rounded-2xl w-[57%]'>
-    </div>
-    </div>
-      <p className='text-center text-gray-300 mt-2 '>57%</p>
-  </div>
-  <div className='bg-gray-900 py-8 px-5 mb-10 rounded-2xl justify-center lg:mb-10'>
-    <GrReactjs className="text-blue-300 text-6xl mx-auto mb-4" />
+    <section className="py-16 bg-gray-900" id="Skills">
+      <div className="text-center mb-12">
+        <h1 className="text-4xl font-bold text-white">
+          My <span className="text-indigo-500">Skills</span>
+        </h1>
+        <hr className="w-24 mx-auto mt-4 border-2 border-indigo-500 rounded" />
+      </div>
 
-    <h1 className='text-white text-4xl mb-8 justify-center text-center'>REACT</h1>
-    <div className='w-full bg-white rounded-2xl h-2.5'>
-    <div className='bg-yellow-600 h-2.5 rounded-2xl w-[72%]'>
-    </div>
-    </div>
-      <p className='text-center text-gray-300 mt-2 '>72%</p>
-  </div>
-  </div>
- 
-</section>
-
-    </>
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 px-6 md:px-12">
+        {skills.map((skill, index) => (
+          <div
+            key={index}
+            className="bg-gray-800 p-8 rounded-3xl text-center shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+          >
+            <div className="text-6xl mb-4 text-white flex justify-center">
+              <span className={`mx-auto text-${skill.color.split('-')[1]}-500`}>{skill.icon}</span>
+            </div>
+            <h2 className="text-2xl font-semibold text-white mb-6">{skill.name}</h2>
+            
+            {/* Progress Bar */}
+            <div className="w-full bg-gray-700 rounded-full h-3">
+              <div className={`${skill.color} h-3 rounded-full transition-all duration-1000`} style={{ width: skill.progress.replace('w-[','').replace(']','') }}></div>
+            </div>
+            <p className="mt-2 text-gray-300">{skill.progress.replace('w-[','').replace(']','')}%</p>
+          </div>
+        ))}
+      </div>
+    </section>
   )
 }
 

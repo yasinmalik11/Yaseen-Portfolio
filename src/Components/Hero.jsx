@@ -1,23 +1,38 @@
-import React from 'react'
-import img from '../Img/my.png'
+import React from 'react';
+import img from '../Img/my.png';
 
 function Hero() {
   return (
-    <>
+    <section
+      id="Hero"
+      className="flex flex-col-reverse lg:flex-row items-center justify-between px-6 lg:px-20 py-12 lg:py-24 bg-gray-900 dark:bg-gray-800"
+    >
+      {/* Text Section */}
+      <div className="w-full lg:w-1/2 text-center lg:text-left">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-extrabold text-white dark:text-yellow-300 mb-6">
+          Hi, I am <span className="text-blue-500 dark:text-blue-400">Muhammad Yaseen</span>
+        </h1>
+        <p className="text-lg sm:text-xl md:text-2xl text-gray-300 dark:text-gray-200 mb-8 leading-relaxed">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore delectus enim beatae maiores
+          excepturi explicabo repellendus amet, molestias debitis? Velit rerum inventore eveniet error
+          exercitationem dolor iure dolorum consectetur voluptate.
+        </p>
+        <a
+          href="#Project"
+          className="inline-block px-6 py-3 text-2xl sm:text-xl font-semibold text-white bg-blue-600 dark:bg-blue-500 rounded-full shadow-lg hover:bg-blue-700 dark:hover:bg-blue-600 transition duration-300"
+        >
+          View Projects
+        </a>
+      </div>
 
-    <section className='flex flex-col-reverse p-0 m-0 lg:flex-row items-center mb-15 lg:mb-1  xl:mt-0' id='Hero'>
-        <div className='w-full h-fit  lg:p-5 lg:m-3 lg:my-30'> 
-            <h1 className='font-bold text-5xl m-3 text-white xl:text-7xl md:text-6xl sm:text-5xl @max-xs:text-4xl'>Hi,I am <span className='text-blue-500 '>Muhammad Yaseen</span></h1>
-            <p className='text-justify text-2xl m-4 text-white '>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore delectus enim beatae maiores excepturi explicabo repellendus amet, molestias debitis? Velit rerum inventore eveniet error exercitationem dolor iure dolorum consectetur voluptate.</p>
-            <button className='p-1 mx-1 bg-blue-600 border-0 shadow-2xl rounded-3xl text-2xl text-white   xl:p-4 xl:mx-4'>View Projects</button>
+      {/* Image Section */}
+      <div className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 mb-10 lg:mb-0 flex justify-center lg:justify-end">
+        <div className="w-full h-full rounded-full border-4 border-blue-400 dark:border-yellow-300 overflow-hidden transform hover:scale-105 transition duration-500 shadow-2xl">
+          <img src={img} alt="Muhammad Yaseen" className="w-full h-full object-cover rounded-full" />
         </div>
-
-        <div className='w-fit h-fit mx-20 my-10 mt-20 xl:mt-10'>
-            <div className='w-74 h-74 rounded-full border-4 overflow-hidden border-blue-400 '><img className='  rounded-full ' src={img} alt="" /></div>
-        </div>
+      </div>
     </section>
-    </>
-  )
+  );
 }
 
-export default Hero
+export default Hero;

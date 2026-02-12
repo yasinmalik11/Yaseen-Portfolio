@@ -1,70 +1,148 @@
-import React from 'react'
-import { FaGithub} from "react-icons/fa";
+import React from "react";
+import { FaGithub, FaTwitter } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
-import { FaTwitter } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { FaPhoneAlt } from "react-icons/fa";
-
 
 
 function Contact() {
   return (
-    <>
-    
-    <h1 className='text-3xl text-white font-bold text-center mb-2 ' id='Contact'> <span className='text-indigo-500 '>Contact</span></h1>
-      <hr className='bg-white h-1'/>
-    <div className='h-full grid grid-cols-1  md:grid-cols-2 xl:grid-cols-2 m-2 xl:m-10 border-2 border-white rounded-lg'>
-      <div className='w-full h-fit m-2 xl:m-6 xl:grid grid-cols-1 '>
-        <h1 className='text-3xl font-bold text-blue-600  mb-4 xl:mx-0 '>Contact Information</h1>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1'>
-       
-      <div className=''>
- <h1 className=' text-2xl font-bold text-white mb-2'>Email</h1>
-        <p className='text-white text-lg mb-10 '>Yasennmalik@gmail.com</p></div>
-         <div>   <h1  className=' text-2xl font-bold text-white mb-2'>Contact Cell</h1>
-        <p className='text-white text-lg mb-10 lg:grid grid-cols-2'>0355468938</p></div>
-         <div>   <h1  className=' text-2xl font-bold text-white mb-2'>Contact Cell</h1>
-        <p className='text-white text-lg mb-6'>fjdkjx </p></div>
-       <div>   <h1  className=' text-3xl font-bold text-blue-600  mb-2 '>Contact Cell</h1>
-         <div className='flex'>
-         <a href="https://github.com/yasinmalik11"><FaGithub className="text-white text-2xl mx-1 " /></a> 
-        <a href="https://www.google.com/search?q=linkedin+sign+in&oq=linked&gs_lcrp=EgZjaHJvbWUqDQgDEAAYgwEYsQMYgAQyBggAEEUYOTITCAEQLhiDARjHARixAxjRAxiABDIGCAIQRRhAMg0IAxAAGIMBGLEDGIAEMgoIBBAAGLEDGIAEMg0IBRAAGIMBGLEDGIAEMhAIBhAuGMcBGLEDGNEDGIAEMgoIBxAAGLEDGIAE0gEJNTgzOWowajE1qAIIsAIB8QXe2TC8KvJBE_EF3tkwvCryQRM&sourceid=chrome&ie=UTF-8"><CiLinkedin className="text-white text-2xl mx-1"/></a>  
-        
-          <FaTwitter className="text-white text-2xl mx-1" />
-          <MdEmail className="text-white text-2xl mx-1" />
-
-          </div>
-          </div>
-
-</div>
+    <section
+      id="Contact"
+      className="bg-gray-900 text-white py-16 px-4 md:px-10"
+    >
+      {/* Heading */}
+      <div className="text-center mb-12">
+        <h1 className="text-4xl font-bold">
+          <span className="text-indigo-500">Contact</span> Me
+        </h1>
+        <div className="w-24 h-1 bg-indigo-500 mx-auto mt-3 rounded"></div>
       </div>
 
-        <form className='bg-black grid grid-cols-1 justify-center m-2 md:items-center md:justify-center xl:m-4 p-4 rounded-xl shadow-lg  max-w-2xl items-center'>
-            <h2 className='text-white items-center font-bold text-center mb-6 text-2xl'>Register</h2>
+      {/* Main Grid */}
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
 
-            <div className='mb-4'>
-                <label className='text-lg font-bold text-gray-200 '>Name</label>
-                <input className='w-full px-2 py-2 border rounded-lg text-white border-white text-lg mt-2' type="text" name='name' placeholder='Enter your name' />
-            </div>
-             <div className='mb-4'>
-                <label className='text-xl text-gray-200'>Email</label>
-                <input className='w-full px-2 py-2 border rounded-lg text-white border-white text-lg mt-2' type="email" name='email' placeholder='Enter your Email' />
-            </div>
-             <div className='mb-4'>
-                <label className='text-xl text-gray-200'>Message</label>
-                 <textarea className='w-full px-2 h-30 border text-white border-white rounded-lg text-lg mt-2' name="Message" id="" placeholder='Enter your massage'></textarea>
-            </div>
-          <button
-          type="submit"
-          className="w-full bg-blue-600 text-white py-2 rounded-lg font-medium hover:bg-blue-700 transition duration-300"
-        >
-          Register
-        </button>
-            
-        </form>
+       {/* Left Side - Contact Info */}
+<div className="bg-gray-800 p-8 rounded-3xl shadow-xl border border-gray-700">
+
+  <h2 className="text-2xl font-bold text-indigo-400 mb-8">
+    Contact Information
+  </h2>
+
+  <div className="space-y-6">
+
+    {/* Email */}
+    <div className="flex items-center gap-5 bg-gray-700/60 backdrop-blur-sm p-5 rounded-2xl hover:scale-105 hover:bg-gray-600 transition duration-300">
+      <div className="bg-indigo-600 p-4 rounded-2xl text-xl shadow-lg">
+        <MdEmail />
+      </div>
+      <div>
+        <h3 className="font-semibold text-lg">Email</h3>
+        <p className="text-gray-300 text-sm">
+          yasennmalik@gmail.com
+        </p>
+      </div>
     </div>
-    </>
-  )
+
+    {/* Phone */}
+    <div className="flex items-center gap-5 bg-gray-700/60 backdrop-blur-sm p-5 rounded-2xl hover:scale-105 hover:bg-gray-600 transition duration-300">
+      <div className="bg-indigo-600 p-4 rounded-2xl text-xl shadow-lg">
+        <FaPhoneAlt />
+      </div>
+      <div>
+        <h3 className="font-semibold text-lg">Phone</h3>
+        <p className="text-gray-300 text-sm">
+          0355-468938
+        </p>
+      </div>
+    </div>
+
+    {/* Support */}
+    <div className="flex items-center gap-5 bg-gray-700/60 backdrop-blur-sm p-5 rounded-2xl hover:scale-105 hover:bg-gray-600 transition duration-300">
+      <div className="bg-indigo-600 p-4 rounded-2xl text-xl shadow-lg">
+        <MdSupportAgent />
+      </div>
+      <div>
+        <h3 className="font-semibold text-lg">Support</h3>
+        <p className="text-gray-300 text-sm">
+          24/7 Available for your help
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  {/* Social Icons */}
+  <div className="flex gap-5 mt-10 text-2xl">
+    <a
+      href="https://github.com/yasinmalik11"
+      target="_blank"
+      rel="noreferrer"
+      className="bg-gray-700 p-3 rounded-full hover:bg-indigo-600 transition duration-300"
+    >
+      <FaGithub />
+    </a>
+
+    <a
+      href="#"
+      className="bg-gray-700 p-3 rounded-full hover:bg-indigo-600 transition duration-300"
+    >
+      <CiLinkedin />
+    </a>
+
+    <a
+      href="#"
+      className="bg-gray-700 p-3 rounded-full hover:bg-indigo-600 transition duration-300"
+    >
+      <FaTwitter />
+    </a>
+  </div>
+
+</div>
+
+
+        {/* Right Side - Form */}
+        <form className="bg-gray-800 p-8 rounded-2xl shadow-lg space-y-6">
+          <h2 className="text-2xl font-bold text-center text-indigo-400">
+            Send Message
+          </h2>
+
+          <div>
+            <label className="block mb-2 text-sm font-medium">Name</label>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              className="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            />
+          </div>
+
+          <div>
+            <label className="block mb-2 text-sm font-medium">Email</label>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            />
+          </div>
+
+          <div>
+            <label className="block mb-2 text-sm font-medium">Message</label>
+            <textarea
+              rows="4"
+              placeholder="Enter your message"
+              className="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            className="w-full bg-indigo-600 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition duration-300"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+  );
 }
 
-export default Contact
+export default Contact;
