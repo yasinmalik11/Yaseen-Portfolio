@@ -14,8 +14,7 @@ import About from './Components/About'
 
 function App() {
   return (
-    <div className='bg-gray-700'>
-<Cht/>  
+    <div className=' bg-gray-700'>
    <Portfolio />
       <Hero/>
       <About/>
@@ -23,6 +22,7 @@ function App() {
       <Skills/>
       <Contact/>
       <Footer/>
+      
       
     </div>
   )
