@@ -9,7 +9,7 @@ function Hero() {
     >
       {/* Text Section */}
       <div className="w-full lg:w-1/2 text-center lg:text-left">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-extrabold text-white dark:text-yellow-300 mb-6">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-extrabold text-white  mb-6">
           Hi, I am <span className="text-blue-500 dark:text-blue-400">Muhammad Yaseen</span>
         </h1>
         <p className="text-lg sm:text-xl md:text-2xl text-gray-300 dark:text-gray-200 mb-8 leading-relaxed">
@@ -27,7 +27,7 @@ function Hero() {
 
       {/* Image Section */}
       <div className="w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 mb-10 lg:mb-0 flex justify-center lg:justify-end">
-        <div className="w-full h-full rounded-full border-4 border-blue-400 dark:border-yellow-300 overflow-hidden transform hover:scale-105 transition duration-500 shadow-2xl">
+        <div className="w-full h-full rounded-full border-4 border-blue-400 overflow-hidden transform hover:scale-105 transition duration-500 shadow-2xl">
           <img src={img} alt="Muhammad Yaseen" className="w-full h-full object-cover rounded-full" />
         </div>
       </div>
